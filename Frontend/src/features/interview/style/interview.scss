@@ -86,6 +86,33 @@
   height: 100vh;
   overflow-y: auto;
 
+  .sidebar-download-btn {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-btn);
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+    transition: all 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--glow-btn-hover);
+    }
+  
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
   &::-webkit-scrollbar {
     width: 3px;
   }
